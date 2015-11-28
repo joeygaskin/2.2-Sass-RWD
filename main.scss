@@ -1,0 +1,513 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "reset";
+
+$gutter: em(10) !global;
+$tablet: new-breakpoint(max-width 1024px 10);
+$mobile: new-breakpoint(max-width 740px 5);
+
+
+
+*{
+box-sizing: border-box;
+
+ }
+
+body {
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/bg.jpg');
+background-attachment: fixed;
+background-position: 30% 0;
+background-repeat: no-repeat;
+background-size: 100%;
+font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  @include outer-container;
+  max-width: 800px;
+}
+
+.social {
+  @include clearfix;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-buttons {
+  float: right;
+  margin-top: 5px;
+}
+
+.button {
+  display: inline-block;
+
+
+}
+
+.nav-dot {
+  display: block;
+  line-height: 8px;
+  color: white;
+}
+
+.button-subscribe {
+  display: inline-block;
+  padding-right: 50px;
+  vertical-align: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.boxes {
+  @include outer-container;
+}
+
+.box {
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 24.35187%;
+  display: inline-block;
+  background-color: #b5302e;
+  color: white;
+  font-weight: bold;
+  font-size: .9rem;
+  padding: 4px 10px;
+  text-align: center;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  @include span-columns(3);
+}
+
+.slider {
+
+  margin-top: 10px;
+  border: 8px solid white;
+  overflow: hidden;
+  @include outer-container;
+}
+
+.slider-img {
+  position: relative;
+  padding-top: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/top-image_crop.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.overlay {
+    position: absolute;
+    top:0px;
+    opacity: .25;
+}
+
+.banner-logo {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.banner-buttons {
+    margin-top: 17px;
+    float: left;
+    display: block;
+    margin-right: 0.86418%;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sk8t-news {
+  margin-bottom: 5px;
+  @include outer-container;
+}
+
+.sk8t-news-story {
+  position: relative;
+  margin-top: 10px;
+  background-color: white;
+  @include span-columns(4);
+  height:350px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.sk8t-news-story h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.sk8t-news-story h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: .8rem;
+}
+.sk8t-news-story h3 {
+  position: absolute;
+  font-size: .8rem;
+  color: #b5302e;
+  text-align: center;
+  bottom: 13px;
+  width: 85%;
+  text-transform: uppercase;
+}
+
+.skateboarders-arrow {
+  position: absolute;
+  float: left;
+  margin-right: 0.86418%;
+  width: 24.35187%;
+  display: inline-block;
+  background-color: #b5302e;
+  color: white;
+  font-weight: bold;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  left: -197px;
+  top: 81px;
+  @include span-columns(3);
+}
+
+.skateboarders-arrow-point {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 10px solid #b5302e;
+    border-top: 30px solid transparent;
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    left: -12px;
+}
+
+.skateboarders-arrow-shadow {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 10px solid rgba(250, 250, 250, 0.3);
+    border-top: 30px solid transparent;
+    position: absolute;
+    top: 94px;
+    left: -12px;
+}
+
+.skateboarders {
+  position: relative;
+  margin-top: 17px;
+}
+
+.skateboarder-1 {
+  display: block;
+  height: 220px;
+  width: 49%;
+  background-image: url('../img/sk8er-4.png');
+  background-size: cover;
+  background-position: top right;
+  border: 5px solid white;
+  float: left;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  @include span-columns(6 of 12);
+  @include clearfix;
+}
+.skateboarder-2 {
+  display: block;
+  height: 220px;
+  width: 49%;
+  background-image: url('../img/sk8er-3.png');
+  background-size: cover;
+  border: 5px solid white;
+  float: left;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  @include span-columns(6 of 12);
+}
+.skateboarder-3 {
+  display: block;
+  width: 100%;
+  height: 220px;
+  background-image: url('../img/sk8er-1.png');
+  background-size: cover;
+  background-position: 85%;
+  border: 5px solid white;
+  float: left;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  @include span-columns(12 of 12);
+}
+.skateboarder-4 {
+  display: block;
+  height: 445px;
+  width: 100%;
+  background-image: url('../img/sk8er-2.png');
+  background-size: cover;
+  background-position: 85%;
+  border: 5px solid white;
+  float:left;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  @include span-columns(12 of 12);
+  @include omega;
+
+}
+.skateboarders-block-1 {
+  display: block;
+  float: left;
+  width: 66%;
+  margin-right: 1%;
+}
+.skateboarders-block-1-inner {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.skateboarders-block-2 {
+  display: block;
+  float: left;
+  width: 33%;
+}
+.skateboarder-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.skateboards {
+  display: block;
+  background: white;
+  margin-top: 20px;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  margin-bottom: 10px;
+  @include span-columns(12 of 12);
+}
+
+.skateboards-container {
+  width: 100%;
+}
+
+.skateboard-img {
+  display: inline-block;
+  width: 9.3%;
+  background: white;
+  padding: 10px;
+  margin-top: 17px;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: block;
+  background: white;
+  margin-top: 17px;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+  margin-bottom: 50px;
+  @include span-columns(12 of 12);
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-side-1 {
+  display: inline-block;
+  width: 55%;
+  float: left;
+  padding: 30px;
+  font-size: 14px;
+}
+
+.contact-side-1 h1{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.contact-side-2 {
+  display: inline-block;
+  width: 45%;
+  float: left;
+  padding: 30px;
+}
+
+.contact-email, .contact-name, textarea.contact-message {
+    font-size: .8rem;
+    float: left;
+    display: block;
+    margin-right: 1.90493%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 3px solid #b2b2b2;
+    border-left: 3px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+}
+
+.contact-submit {
+    text-align: right;
+    background: #b5302e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 10px;
+}
+
+.button-icons-container {
+  float: left;
+  width: 100%;
+
+}
+.button-icons {
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+  padding: 2px;
+  -webkit-filter: grayscale(100%);
+}
+.button-icons img{
+  width: 30px;
+  height: 30px
+}
+
+@media screen and  (max-width:1200px){
+  .skateboarders-arrow {
+    display: none;
+  }
+  .skateboarders-arrow-point {
+    display: none;
+  }
+  .skateboarders-arrow-shadow {
+    display: none;
+  }
+}
+
+@media screen and  (max-width:770px){
+  .sk8t-news-story {
+    @include span-columns(12);
+    height:200px;
+  }
+}
+
+@media screen and  (max-width:750px){
+  .sk8t-news-story h3{
+    width: 90%;
+  }
+  .skateboarder-1 {
+    background-position: center;
+    margin-bottom: 1%;
+    @include span-columns(12 of 12);
+  }
+  .skateboarder-2 {
+    background-position: center;
+    @include span-columns(12 of 12);
+  }
+  .skateboarder-3 {
+    margin-bottom: 1%;
+  }
+  .skateboarder-4 {
+    height: 220px;
+    @include span-columns(12 of 12);
+  }
+  .skateboarders-block-1 {
+    width: 100%;
+  }
+  .skateboarders-block-2 {
+    width: 100%;
+  }
+}
+
+@media screen and  (max-width:735px){
+
+  .box {
+    display: block;
+    font-size: .7rem;
+  }
+}
+
+@media screen and  (max-width:700px){
+  .skateboards {
+    display: block;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 0 3px rgba(250, 250, 250, 0.3);
+    margin-bottom: 10px;
+    @include span-columns(12 of 12);
+  }
+
+  .skateboards-container {
+    width: 100%;
+  }
+
+  .skateboard-img {
+    width: 10%;
+    margin-left: -5px;
+  }
+
+}
+@media screen and  (max-width:645px){
+  .sk8t-news-story {
+    height:100px;
+  }
+  .sk8t-news-story span{
+    display: none;
+  }
+  .sk8t-news-story h2{
+    display: none;
+  }
+}
+@media screen and  (max-width:590px){
+  .box {
+    padding: 10px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    @include span-columns(12 of 12);
+  }
+  .button-subscribe {
+    font-weight: bold;
+    vertical-align: 8px;
+  }
+  .button {
+    width: 30px;
+
+  }
+  .nav-dot {
+    display: none;
+  }
+
+  .contact-side-2 {
+  padding: 10px;
+  }
+  .contact-submit {
+    width:100%;
+  }
+}
