@@ -701,5 +701,18 @@ ul {
 
   .contact-submit {
     width: 100%; } }
+@media screen and (max-width: 360px) {
+  .button-subscribe {
+    padding-right: 0px; }
+
+  .button-icons img {
+    width: 20px;
+    height: 20px; }
+
+  .box {
+    font-size: 1.5rem; }
+
+  .sk8t-news-story h1 {
+    font-size: 1.14rem; } }
 
 /*# sourceMappingURL=main.css.map */
